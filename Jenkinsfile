@@ -7,7 +7,7 @@ pipeline {
     }
 
     environment {
-        DOCKERHUB_USER = "ramky1991"
+        DOCKERHUB_USER = "charan1286"
         DOCKERHUB_REPO = "java-aks-app"
         IMAGE_TAG = "${BUILD_NUMBER}"
         IMAGE_NAME = "${DOCKERHUB_USER}/${DOCKERHUB_REPO}"
@@ -18,7 +18,7 @@ pipeline {
         stage("Checkout Code") {
             steps {
                 git branch: 'main',
-                url: 'https://github.com/NagarjunaBujji/DevSecOps-project.git'
+                url: 'https://github.com/charan-28/jenkins-cicd-aks.git'
             }
         }
 
